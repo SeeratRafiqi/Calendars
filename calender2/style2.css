@@ -1,0 +1,69 @@
+/* CSS for calendar display */
+#calendar-container {
+    text-align: center;
+    border: 2px solid #B5C0D0;
+    padding: 20px;
+    width: 600px;
+    margin: 100px auto;
+    align-items: center;
+    background-color: #F5E8DD;
+    font-weight: bold;
+    
+  
+    
+}#calendar-body{
+font-weight: lighter;
+}
+
+#calendar-body .sunday {
+    color: red; /* Set the text color to red for cells representing Sundays */
+    
+}
+.buttons button{
+    cursor:pointer;
+    zoom:1;
+    background:#c1efde;
+}
+
+#calendar {
+    cursor:pointer;
+    margin:15px auto;
+    max-width:1000px;
+    padding: 2px auto;
+    background-color: #EED3D9;
+
+}
+
+#calendar select {
+    margin-right: 100px;
+    margin:20px ;
+    background-color:#CCD3CA;
+   
+   
+}
+
+.table {
+   width: 100%;
+    border-collapse:separate;
+    vertical-align: middle;
+    text-align: center;
+ 
+}
+
+.table td, .table th {
+    padding: 10px;
+    text-align: center;
+    vertical-align:middle; /* Center content vertically */
+}
+
+.date-picker {
+    padding: 1px;
+    text-align: center;
+    cursor: pointer;
+    vertical-align: top;
+    display: inline-block; /* Use inline-block to allow width and height properties */
+    background-color: aqua;
+    /* Optional: You can set a default background color for date-picker */
+   
+}
+
