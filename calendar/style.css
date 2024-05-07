@@ -1,0 +1,87 @@
+.Main{
+    margin:15px auto;
+    max-width:1100px;
+}
+.calendar-container{
+    background:#e3f3cd;
+    padding:15px;
+    max-width:475px;
+    margin:3px auto;
+    overflow:auto;
+}
+/* we are writing button again to actually use these elements in buttons*/
+
+.buttons button{
+    /*changes the cursor from arrow to pointer*/
+    cursor:pointer;
+    zoom:1;
+    background:#a2e2ca;
+    color:#150e0d;
+    border:1px solid #BACD92;
+    border-radius:9px;
+    padding:5px 10px;
+}
+
+.table{
+    border-collapse:collapse;
+    width:100%;
+   
+}
+.table td,.table th{
+    padding:10px;
+    border: 2px solid#2f3030;
+    text-align:center;
+    vertical-align:top;
+}
+date-picker.selected {
+    font-weight: bold;
+    outline: 2px dashed #00BCD4;
+}
+
+.date-picker.selected span {
+    border-bottom: 3px solid currentColor;
+}
+
+/* sunday */
+.date-picker:nth-child(1) {
+  color: red;
+}
+
+/* friday */
+.date-picker:nth-child(6) {
+  color: green;
+}
+
+#monthAndYear {
+    text-align: center;
+    margin-top: 0
+}
+.buttons {
+    position: relative;
+    margin-bottom: 1em;
+    overflow: hidden;
+    clear: both;
+}
+#previous {
+    float: left;
+}
+
+#next {
+    float: right;
+}
+.footer-container {
+    margin-top: 1em;
+    border-top: 2px solid #dadada;
+    padding: 10px 0;
+}
+
+.footer-container select {
+    cursor: pointer;
+    zoom: 1;
+    background: #fac4c1;
+    color: #5f072d;
+    border: 2px solid #d4e6e6;
+    border-radius: 9px;
+    padding: 5px 1em;
+}
+

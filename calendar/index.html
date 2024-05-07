@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Calendar</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="Main">
+        <div class="calendar-container">
+            <h3 id="monthAndYear"></h3>
+            <div class="buttons">
+                <!-- &#8249; and &#8250; represent the left and right arrow -->
+                <button id="previous" onclick="previous()">prev &#8249;</button>
+                <button id="next" onclick="next()">next &#8250;</button>
+            </div>
+            <table class="table" id="calendar" data-lang="eng">
+                <thead id="thead-month"></thead>
+                <tbody id="calendar-body"></tbody>
+            </table>
+            <div class="footer-container">
+                <!-- Jump will help us go to different sections -->
+                <label for="month">Jump To:</label>
+                <select id="month" onchange="jump()">
+                    <option value="0">Jan</option>
+                    <option value="1">Feb</option>
+                    <option value="2">March</option>
+                    <option value="3">April</option>
+                    <option value="4">May</option>
+                    <option value="5">June</option>
+                    <option value="6">July</option>
+                    <option value="7">August</option>
+                    <option value="8">Sept</option>
+                    <option value="9">Oct</option>
+                    <option value="10">Nov</option>
+                    <option value="11">Dec</option>
+                </select>
+                <select id="year" onchange="jump()"></select>
+            </div>
+        </div>
+    </div>
+    
+    <!-- JavaScript file should be included at the end of the body -->
+    <script src="first.js"></script>
+</body>
+</html>
